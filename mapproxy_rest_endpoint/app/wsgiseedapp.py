@@ -17,7 +17,7 @@ from mapproxy.seed.config import SeedingConfiguration, SeedConfigurationError
 from mapproxy.seed.script import seed
 from mapproxy.seed.util import ProgressLog
 
-log = logging.getLogger('mapproxy.config')
+log = logging.getLogger('mapproxy_rest_endpoint')
 log_wsgi_app = logging.getLogger('mapproxy.wsgiapp')
 
 

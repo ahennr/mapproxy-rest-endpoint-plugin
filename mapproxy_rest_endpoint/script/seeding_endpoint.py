@@ -1,3 +1,4 @@
+import logging
 import optparse
 import sys
 
@@ -21,7 +22,7 @@ def service_seed_endpoint_command(args=None):
 
     if len(args) != 2:
         parser.print_help()
-        print("\nERROR: MapProxy configuration required.")
+        logging.error("ERROR: MapProxy configuration required.")
         sys.exit(1)
     mapproxy_conf = args[1]
 

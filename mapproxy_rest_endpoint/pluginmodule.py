@@ -4,7 +4,7 @@ from mapproxy.script.util import register_command
 
 from mapproxy_rest_endpoint.script.seeding_endpoint import service_seed_endpoint_command
 
-plugin_logger = logging.getLogger('terrestris.rest.endpoint')
+plugin_logger = logging.getLogger('mapproxy_rest_endpoint')
 
 already_executed = False
 
