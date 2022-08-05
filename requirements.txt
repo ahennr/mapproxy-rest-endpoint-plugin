@@ -1,0 +1,4 @@
+mapproxy>=1.15
+
+setuptools~=60.2.0
+Werkzeug~=1.0.1
