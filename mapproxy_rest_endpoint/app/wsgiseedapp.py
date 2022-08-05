@@ -84,7 +84,7 @@ class SeedRestApp(object):
     def __call__(self, environ, start_response):
         if environ['REQUEST_METHOD'] != 'POST':
             resp = not_supported_response()
-            log.error('Request method not supported for seeding endpoint', environ['REQUEST_METHOD'])
+            log.error('Request method not supported for seeding endpoint')
             return resp(environ, start_response)
 
         try:

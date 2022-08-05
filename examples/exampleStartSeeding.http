@@ -1,4 +1,4 @@
-POST http://localhost/mapproxy-seed
+POST http://localhost/mapproxy-seed/
 Content-Type: application/json
 
 {
@@ -14,16 +14,6 @@ Content-Type: application/json
         "levels": [
           0,
           1,
-          2
-        ]
-      }
-    },
-    "cleanups": {
-      "cleanup1": {
-        "caches": [
-          "dop_pan_cache"
-        ],
-        "levels": [
           2
         ]
       }

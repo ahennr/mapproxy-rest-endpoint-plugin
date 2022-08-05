@@ -1,4 +1,4 @@
-POST http://localhost/mapproxy-seed
+POST http://localhost/mapproxy-seed/
 Content-Type: application/json
 
 {
@@ -6,8 +6,7 @@ Content-Type: application/json
     "cleanups": {
       "cleanupPolygon": {
         "caches": [
-          "dop_cache",
-          "dop_pan_cache"
+          "dop_cache"
         ],
         "coverages": [
           "changes_entity_area1"
