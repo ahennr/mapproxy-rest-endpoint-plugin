@@ -1,0 +1,35 @@
+###
+POST http://localhost/mapproxy-seed
+Content-Type: application/json
+
+{
+  "seedConfig": {
+    "cleanups": {
+      "cleanupPolygon": {
+        "caches": [
+          "dop_cache",
+          "dop_pan_cache"
+        ],
+        "coverages": [
+          "changes_entity_area1"
+        ]
+      }
+    },
+    "coverages": {
+      "changes_entity_area1": {
+        "bbox": [
+          638207.82,
+          5683208.6,
+          638666.91,
+          5683227.69
+        ],
+        "srs": "EPSG:25832"
+      }
+    }
+  },
+  "config": {
+    "dry_run": false,
+    "concurrency": 5,
+    "geom_levels": false
+  }
+}

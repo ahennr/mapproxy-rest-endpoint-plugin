@@ -1,0 +1,38 @@
+###
+POST http://localhost/mapproxy-seed
+Content-Type: application/json
+
+{
+  "seedConfig": {
+    "seeds": {
+      "seed1": {
+        "caches": [
+          "dop_cache"
+        ],
+        "refresh_before": {
+          "minutes": 1
+        },
+        "levels": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    "cleanups": {
+      "cleanup1": {
+        "caches": [
+          "dop_pan_cache"
+        ],
+        "levels": [
+          2
+        ]
+      }
+    }
+  },
+  "config": {
+    "dry_run": false,
+    "concurrency": 5,
+    "geom_levels": false
+  }
+}
