@@ -11,5 +11,5 @@ from mapproxy.wsgiapp import make_wsgi_app
 application = make_wsgi_app(r'%(mapproxy_conf)s')
 
 # create wsgi app for mapproxy seed endpoint (default: port 9090)
-from mapproxy.wsgiseedapp import make_wsgi_seed_app
+from mapproxy_rest_endpoint.app.wsgiseedapp import make_wsgi_seed_app
 rest_seeder = make_wsgi_seed_app(r'%(mapproxy_conf)s')
