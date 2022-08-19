@@ -21,13 +21,13 @@ log = logging.getLogger('mapproxy_rest_endpoint')
 log_wsgi_app = logging.getLogger('mapproxy.wsgiapp')
 
 
-def make_wsgi_seed_app(services_conf=None, debug=False):
+def make_wsgi_seed_app(services_conf=None, debug=False, ignore_warnings=False):
     """
     Create a Seed REST endpoint app
     """
 
     try:
-        conf = load_configuration(mapproxy_conf=services_conf, ignore_warnings=False)
+        conf = load_configuration(mapproxy_conf=services_conf, ignore_warnings=ignore_warnings)
     except ConfigurationError as e:
         log.fatal(e)
         raise
